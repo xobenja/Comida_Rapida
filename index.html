@@ -1,138 +1,258 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Comida Anabólica</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comida Anabólica</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
-
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-    <div class="container">
-      <a class="navbar-brand fw-bold" href="#">Comida Anabólica</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="#maestrias">Maestrías</a></li>
-          <li class="nav-item"><a class="nav-link" href="#menu">Menú</a></li>
-          <li class="nav-item"><a class="nav-link" href="#testimonios">Testimonios</a></li>
-          <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-  <!-- Encabezado -->
-  <header class="hero">
-    <h1>Comida Anabólica</h1>
-    <p>Hamburguesas altas en proteínas para tu cheat meal</p>
-  </header>
-
-  <!-- Sección Maestrías -->
-  <div id="maestrias" class="container">
-    <h2 class="section-title text-center">Maestrías</h2>
-    <p class="text-center">
-      "El que prueba, repite. Así de simple. Nuestras hamburguesas anabólicas tienen más adictos
-      que un gimnasio en enero. ¡Un mordisco y quedas fichado!"
-    </p>
-
-    <div class="row text-center">
-      <div class="col-md-4">
-        <img src="imagenes/imagen-primer-plano-cocinero-colocando-tocino-frito-sobre-rebanada-queso-mientras-coloca-hamburguesa-capas_181624-57745.jpg" class="img-fluid rounded mb-3" alt="Ingredientes frescos">
-        <h4>Ingredientes frescos</h4>
-        <p>Preparados en el momento, nada del día anterior.</p>
-      </div>
-      <div class="col-md-4">
-        <img src="imagenes/imagen_plato.jpg" class="img-fluid rounded mb-3" alt="Comida reconfortante">
-        <h4>Comida reconfortante</h4>
-        <p>Platos sencillos y populares, preparados con esmero.</p>
-      </div>
-      <div class="col-md-4">
-        <img src="imagenes/imagen_salida.jpg" class="img-fluid rounded mb-3" alt="Bebidas energéticas">
-        <h4>Mejores bebidas</h4>
-        <p>Energéticas altas en cafeína para el mejor entreno.</p>
-      </div>
-    </div>
-  </div>
-
-  <!-- Menú -->
-  <div class="container mt-4">
-    <div class="row">
-      <div class="col-md-4">
-        <div class="card" style="width: 20rem;">
-          <img src="imagenes/amburgereereere.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card 1</h5>
-            <p class="card-text">Texto de ejemplo para la primera carta.</p>
-           
-          </div>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#inicio">Comida Anabólica</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#inicio">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#menu">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#novedades">Novedades</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacto">Contacto</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-      </div>
-  
-      <div class="col-md-4">
-        <div class="card" style="width: 20rem;">
-          <img src="imagenes/pollitos.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card 2</h5>
-            <p class="card-text">Texto de ejemplo para la segunda carta.</p>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero-section">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="hero-card">
+                        <div class="hero-image"></div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="hero-card">
+                        <div class="hero-content">
+                            <h2>Hamburguesas</h2>
+                            <p>Estas hamburguesas están altas en proteínas, especialmente para gente que haga ejercicio luego de entrenar.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Maestrías Section -->
+    <section class="maestrias-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <div class="maestrias-content">
+                        <h2>Maestrías<br>Para<br>generar solo<br><span class="highlight">músculo</span></h2>
+                        <p class="mt-4">"El que prueba, repite. Así de simple. Nuestras hamburguesas anabólicas tienen más adictos que un gimnasio en enero. No hacemos publicidad, porque las bocas llenas y felices ya son nuestros mejores influencers. ¡Un mordisco y quedas fichado!"</p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="steps-card">
+                        <div class="step-item">
+                            <div class="step-number">1</div>
+                            <div class="step-content">
+                                <h5>Ingredientes frescos de temporada</h5>
+                                <p>Calidad preparados en el momento, cada de cosas mejores que vas a probar.</p>
+                            </div>
+                        </div>
+                        <div class="step-item">
+                            <div class="step-number">2</div>
+                            <div class="step-content">
+                                <h5>Cocción extraordinaria y elevada</h5>
+                                <p>Tenemos platos sencillos y populares en el menú, pero hechos de una manera que nuestras técnicas así lo permiten.</p>
+                            </div>
+                        </div>
+                        <div class="step-item">
+                            <div class="step-number">3</div>
+                            <div class="step-content">
+                                <h5>Migración sensorial</h5>
+                                <p>Nuestra propuesta gastronómica está en calidad para hacer te sentir entero.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu-section">
+        <div class="container">
+            <h2 class="menu-title text-center">Menu</h2>
+            <div class="text-center mb-5">
+                <button class="btn btn-menu">VER MENÚ COMPLETO</button>
+            </div>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="menu-card">
+                        <div class="menu-card-img">
+                            <i class="fas fa-hamburger fa-3x"></i>
+                        </div>
+                        <div class="menu-card-body">
+                            <h5>Hamburguesas</h5>
+                            <p>Carnes, féchas por nuestras mejores proteínas adicional.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="menu-card">
+                        <div class="menu-card-img">
+                            <i class="fas fa-drumstick-bite fa-3x"></i>
+                        </div>
+                        <div class="menu-card-body">
+                            <h5>Pollo Asado</h5>
+                            <p>Pollo de la granja directa con las mejores especies te la más alta calidad.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="menu-card">
+                        <div class="menu-card-img">
+                            <i class="fas fa-bottle-water fa-3x"></i>
+                        </div>
+                        <div class="menu-card-body">
+                            <h5>Bebidas Energéticas</h5>
+                            <p>Tenemos las bebidas y sus variedades mente para entrenar.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Community Section -->
+    <section id="novedades" class="community-section">
+        <div class="container">
+            <h2 class="community-title">De nuestra <span class="highlight">comunidad</span></h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="member-card">
+                        <div class="member-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <h4 class="member-name">Ronnie coleman</h4>
+                        <p>"Los fortificamos para cuando tienes que recantar lo que pides y te preparan según tu requerimiento mejores de todo el mundo"</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="member-card">
+                        <div class="member-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <h4 class="member-name">Chris Bumstead</h4>
+                        <p>"Soy el mejor culturista del arte generación y te garantizo como el mayor especialista del continente"</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="member-card">
+                        <div class="member-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <h4 class="member-name">Annabel Lucinda</h4>
+                        <p>"Soy una de las más grandes mujeres del fitness y te lo confermo como especialista profesional establecida"</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contacto" class="footer">
+        <div class="container">
+            <h2 class="footer-title">¡Pasa por aquí pronto!</h2>
+            <p class="footer-subtitle">Te esperamos</p>
             
-          </div>
+            <div class="row mt-5">
+                <div class="col-md-4">
+                    <div class="contact-info">
+                        <h6>San Bernardo</h6>
+                        <p>Pudre 4527</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="contact-info">
+                        <h6>Correo</h6>
+                        <p>ComidaAnabolica@gpt.com</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="contact-info">
+                        <h6>Número</h6>
+                        <p>+56 9665 25 300</p>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-  
-      <div class="col-md-4">
-        <div class="card" style="width: 20rem;">
-          <img src="imagenes/istockphoto-458711721-612x612.jpg" class="card-img-top" alt="..." style="height:350px; object-fit:cover;>
-          <div class="card-body">
-            <h5 class="card-title">Card 3</h5>
-            <p class="card-text">Texto de ejemplo para la tercera carta.</p>
-         
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  
-  
+    </footer>
 
-  <!-- Testimonios -->
-  <div id="testimonios" class="container">
-    <h2 class="section-title text-center">De nuestra comunidad</h2>
-    <div class="row">
-      <div class="col-md-4">
-        <div class="testimonial">
-          <p>"Las hamburguesas para cuando estoy en volumen me encantan en especial de este restaurante, tiene las mejores de todo el mundo."</p>
-          <strong>- Ronnie Coleman</strong>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="testimonial">
-          <p>"Soy el mejor culturista de esta generación y sí, yo también como hamburguesas de esta increíble cantidad."</p>
-          <strong>- Chris Bumstead</strong>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="testimonial">
-          <p>"Soy una de las más grandes mujeres fitness y yo también como hamburguesas de esta calidad tan increíble."</p>
-          <strong>- Annabel Lucinda</strong>
-        </div>
-      </div>
-    </div>
-  </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
 
-  <!-- Contacto -->
-  <footer id="contacto">
-    <p><strong>¡Pasa por aquí pronto!</strong></p>
-    <p>📍 Freire 4857, San Bernardo</p>
-    <p>📧 ComidaAnabolica@gmail.com | 📞 +56 9 4053 5380</p>
-    <p><a href="https://es.wikipedia.org/wiki/Chris_Bumstead" target="_blank" class="text-white">Ver más sobre Chris Bumstead</a></p>
-  </footer>
+        // Add navbar background on scroll
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.style.backgroundColor = '#1a1a1a';
+            } else {
+                navbar.style.backgroundColor = 'transparent';
+            }
+        });
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+        // Add animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observe all cards for animation
+        document.querySelectorAll('.menu-card, .member-card, .hero-card').forEach(card => {
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(30px)';
+            card.style.transition = 'all 0.6s ease';
+            observer.observe(card);
+        });
+    </script>
 </body>
 </html>

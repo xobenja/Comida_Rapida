@@ -4,28 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Comida Anabólica</title>
-    <link rel="stylesheet" href="css/style.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <!-- Navegación Bootstrap -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top barra-navegacion">
         <div class="container">
-            <a class="navbar-brand" href="#inicio">Comida Anabólica</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <a class="navbar-brand marca-navegacion" href="#inicio">Comida Anabólica</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNavegacion" aria-controls="menuNavegacion" aria-expanded="false" aria-label="Alternar navegación">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
+            <div class="collapse navbar-collapse" id="menuNavegacion">
+                <ul class="navbar-nav ms-auto enlaces-navegacion">
                     <li class="nav-item">
-                        <a class="nav-link" href="#inicio">Inicio</a>
+                        <a class="nav-link active" href="#inicio">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#menu">Menu</a>
+                        <a class="nav-link" href="#menu">Menú</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#novedades">Novedades</a>
+                        <a class="nav-link" href="#testimonios">Testimonios</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#contacto">Contacto</a>
@@ -35,20 +35,22 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section id="inicio" class="hero-section">
+    <!-- Sección Principal con Grid Bootstrap -->
+    <section id="inicio" class="seccion-principal">
         <div class="container">
-            <div class="row g-4">
-                <div class="col-md-6">
-                    <div class="hero-card">
-                        <div class="hero-image"></div>
+            <div class="row g-4 align-items-center">
+                <div class="col-lg-6 col-md-12">
+                    <div class="tarjeta-principal aparecer-suave">
+                        <div class="imagen-principal">
+                            <img src="imagenes/Diseno_sin_titulo.png" alt="hamburguesa", width="100%">
+                        </div>
                     </div>
                 </div>
-                <div class="col-md-6">
-                    <div class="hero-card">
-                        <div class="hero-content">
-                            <h2>Hamburguesas</h2>
-                            <p>Estas hamburguesas están altas en proteínas, especialmente para gente que haga ejercicio luego de entrenar.</p>
+                <div class="col-lg-6 col-md-12">
+                    <div class="tarjeta-principal aparecer-suave">
+                        <div class="contenido-principal">
+                            <h2>Hamburguesas Premium</h2>
+                            <p>Nuestras hamburguesas están diseñadas especialmente para deportistas y personas activas. Altas en proteínas, perfectas para después del entrenamiento.</p>
                         </div>
                     </div>
                 </div>
@@ -56,37 +58,37 @@
         </div>
     </section>
 
-    <!-- Maestrías Section -->
-    <section class="maestrias-section">
+    <!-- Sección Maestrías con Grid Bootstrap -->
+    <section class="seccion-maestrias">
         <div class="container">
             <div class="row align-items-center">
-                <div class="col-lg-6">
-                    <div class="maestrias-content">
-                        <h2>Maestrías<br>Para<br>generar solo<br><span class="highlight">músculo</span></h2>
+                <div class="col-lg-6 col-md-12 mb-4">
+                    <div class="contenido-maestrias aparecer-suave">
+                        <h2>Maestrías<br>Para<br>generar solo<br><span class="texto-destacado">músculo</span></h2>
                         <p class="mt-4">"El que prueba, repite. Así de simple. Nuestras hamburguesas anabólicas tienen más adictos que un gimnasio en enero. No hacemos publicidad, porque las bocas llenas y felices ya son nuestros mejores influencers. ¡Un mordisco y quedas fichado!"</p>
                     </div>
                 </div>
-                <div class="col-lg-6">
-                    <div class="steps-card">
-                        <div class="step-item">
-                            <div class="step-number">1</div>
-                            <div class="step-content">
+                <div class="col-lg-6 col-md-12">
+                    <div class="tarjeta-pasos aparecer-suave">
+                        <div class="elemento-paso">
+                            <div class="numero-paso">1</div>
+                            <div class="contenido-paso">
                                 <h5>Ingredientes frescos de temporada</h5>
-                                <p>Calidad preparados en el momento, cada de cosas mejores que vas a probar.</p>
+                                <p>Calidad premium preparados en el momento, cada ingrediente seleccionado para ofrecerte lo mejor que vas a probar.</p>
                             </div>
                         </div>
-                        <div class="step-item">
-                            <div class="step-number">2</div>
-                            <div class="step-content">
+                        <div class="elemento-paso">
+                            <div class="numero-paso">2</div>
+                            <div class="contenido-paso">
                                 <h5>Cocción extraordinaria y elevada</h5>
-                                <p>Tenemos platos sencillos y populares en el menú, pero hechos de una manera que nuestras técnicas así lo permiten.</p>
+                                <p>Tenemos platos sencillos y populares en el menú, pero hechos de una manera única que nuestras técnicas culinarias así lo permiten.</p>
                             </div>
                         </div>
-                        <div class="step-item">
-                            <div class="step-number">3</div>
-                            <div class="step-content">
-                                <h5>Migración sensorial</h5>
-                                <p>Nuestra propuesta gastronómica está en calidad para hacer te sentir entero.</p>
+                        <div class="elemento-paso">
+                            <div class="numero-paso">3</div>
+                            <div class="contenido-paso">
+                                <h5>Experiencia sensorial completa</h5>
+                                <p>Nuestra propuesta gastronómica está diseñada con la más alta calidad para hacerte sentir completamente satisfecho.</p>
                             </div>
                         </div>
                     </div>
@@ -95,44 +97,44 @@
         </div>
     </section>
 
-    <!-- Menu Section -->
-    <section id="menu" class="menu-section">
+    <!-- Sección Menú con Tarjetas Bootstrap -->
+    <section id="menu" class="seccion-menu">
         <div class="container">
-            <h2 class="menu-title text-center">Menu</h2>
-            <div class="text-center mb-5">
-                <button class="btn btn-menu">VER MENÚ COMPLETO</button>
+            <h2 class="titulo-menu text-center aparecer-suave">Nuestro Menú</h2>
+            <div class="text-center mb-5 aparecer-suave">
+                <button class="btn boton-menu">VER MENÚ COMPLETO</button>
             </div>
             <div class="row">
-                <div class="col-md-4 mb-4">
-                    <div class="menu-card">
-                        <div class="menu-card-img">
-                            <i class="fas fa-hamburger fa-3x"></i>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="tarjeta-menu aparecer-suave">
+                        <div class="imagen-tarjeta-menu">
+                            <i class="fas fa-hamburger"></i>
                         </div>
-                        <div class="menu-card-body">
-                            <h5>Hamburguesas</h5>
-                            <p>Carnes, féchas por nuestras mejores proteínas adicional.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 mb-4">
-                    <div class="menu-card">
-                        <div class="menu-card-img">
-                            <i class="fas fa-drumstick-bite fa-3x"></i>
-                        </div>
-                        <div class="menu-card-body">
-                            <h5>Pollo Asado</h5>
-                            <p>Pollo de la granja directa con las mejores especies te la más alta calidad.</p>
+                        <div class="cuerpo-tarjeta-menu">
+                            <h5>Hamburguesas Anabólicas</h5>
+                            <p>Carnes premium preparadas por nuestros chefs, con las mejores proteínas adicionales para tu rendimiento deportivo.</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4 mb-4">
-                    <div class="menu-card">
-                        <div class="menu-card-img">
-                            <i class="fas fa-bottle-water fa-3x"></i>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="tarjeta-menu aparecer-suave">
+                        <div class="imagen-tarjeta-menu">
+                            <i class="fas fa-drumstick-bite"></i>
                         </div>
-                        <div class="menu-card-body">
+                        <div class="cuerpo-tarjeta-menu">
+                            <h5>Pollo Asado Especial</h5>
+                            <p>Pollo de granja seleccionado, preparado con las mejores especias y técnicas culinarias de la más alta calidad.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="tarjeta-menu aparecer-suave">
+                        <div class="imagen-tarjeta-menu">
+                            <i class="fas fa-bottle-water"></i>
+                        </div>
+                        <div class="cuerpo-tarjeta-menu">
                             <h5>Bebidas Energéticas</h5>
-                            <p>Tenemos las bebidas y sus variedades mente para entrenar.</p>
+                            <p>Amplia variedad de bebidas especialmente formuladas para complementar tu entrenamiento y nutrición deportiva.</p>
                         </div>
                     </div>
                 </div>
@@ -140,64 +142,64 @@
         </div>
     </section>
 
-    <!-- Community Section -->
-    <section id="novedades" class="community-section">
+    <!-- Sección Comunidad con Grid Bootstrap -->
+    <section id="testimonios" class="seccion-comunidad">
         <div class="container">
-            <h2 class="community-title">De nuestra <span class="highlight">comunidad</span></h2>
+            <h2 class="titulo-comunidad aparecer-suave">Testimonios de nuestra <span class="texto-destacado">comunidad</span></h2>
             <div class="row">
-                <div class="col-md-4">
-                    <div class="member-card">
-                        <div class="member-avatar">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="tarjeta-miembro aparecer-suave">
+                        <div class="avatar-miembro">
                             <i class="fas fa-user"></i>
                         </div>
-                        <h4 class="member-name">Ronnie coleman</h4>
-                        <p>"Los fortificamos para cuando tienes que recantar lo que pides y te preparan según tu requerimiento mejores de todo el mundo"</p>
+                        <h4 class="nombre-miembro">Ronnie Coleman</h4>
+                        <p>"Los recomiendo totalmente. Cuando necesitas recargar energías, te preparan exactamente lo que necesitas según tus requerimientos. Los mejores de todo el mundo."</p>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="member-card">
-                        <div class="member-avatar">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="tarjeta-miembro aparecer-suave">
+                        <div class="avatar-miembro">
                             <i class="fas fa-user"></i>
                         </div>
-                        <h4 class="member-name">Chris Bumstead</h4>
-                        <p>"Soy el mejor culturista del arte generación y te garantizo como el mayor especialista del continente"</p>
+                        <h4 class="nombre-miembro">Chris Bumstead</h4>
+                        <p>"Como profesional del culturismo de esta generación, te garantizo que son los especialistas más completos del continente en nutrición deportiva."</p>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="member-card">
-                        <div class="member-avatar">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="tarjeta-miembro aparecer-suave">
+                        <div class="avatar-miembro">
                             <i class="fas fa-user"></i>
                         </div>
-                        <h4 class="member-name">Annabel Lucinda</h4>
-                        <p>"Soy una de las más grandes mujeres del fitness y te lo confermo como especialista profesional establecida"</p>
+                        <h4 class="nombre-miembro">Annabel Lucinda</h4>
+                        <p>"Como una de las principales figuras del fitness femenino, te confirmo que son especialistas profesionales completamente establecidos en el mercado."</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer id="contacto" class="footer">
+    <!-- Pie de Página con Grid Bootstrap -->
+    <footer id="contacto" class="pie-pagina">
         <div class="container">
-            <h2 class="footer-title">¡Pasa por aquí pronto!</h2>
-            <p class="footer-subtitle">Te esperamos</p>
+            <h2 class="titulo-pie-pagina aparecer-suave">¡Visítanos Pronto!</h2>
+            <p class="subtitulo-pie-pagina aparecer-suave">Te esperamos con los brazos abiertos</p>
             
             <div class="row mt-5">
-                <div class="col-md-4">
-                    <div class="contact-info">
-                        <h6>San Bernardo</h6>
-                        <p>Pudre 4527</p>
+                <div class="col-lg-4 col-md-6 mb-3">
+                    <div class="informacion-contacto aparecer-suave">
+                        <h6><i class="fas fa-map-marker-alt me-2"></i>Ubicación</h6>
+                        <p>San Bernardo<br>Pudre 4527</p>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="contact-info">
-                        <h6>Correo</h6>
+                <div class="col-lg-4 col-md-6 mb-3">
+                    <div class="informacion-contacto aparecer-suave">
+                        <h6><i class="fas fa-envelope me-2"></i>Correo Electrónico</h6>
                         <p>ComidaAnabolica@gpt.com</p>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="contact-info">
-                        <h6>Número</h6>
+                <div class="col-lg-4 col-md-6 mb-3">
+                    <div class="informacion-contacto aparecer-suave">
+                        <h6><i class="fas fa-phone me-2"></i>Teléfono</h6>
                         <p>+56 9665 25 300</p>
                     </div>
                 </div>
@@ -205,15 +207,18 @@
         </div>
     </footer>
 
+    <!-- JavaScript Bundle Bootstrap -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- JavaScript Personalizado -->
     <script>
-        // Smooth scrolling for navigation links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
+        // Desplazamiento suave para enlaces de navegación
+        document.querySelectorAll('a[href^="#"]').forEach(enlace => {
+            enlace.addEventListener('click', function (e) {
                 e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
+                const destino = document.querySelector(this.getAttribute('href'));
+                if (destino) {
+                    destino.scrollIntoView({
                         behavior: 'smooth',
                         block: 'start'
                     });
@@ -221,37 +226,55 @@
             });
         });
 
-        // Add navbar background on scroll
+        // Fondo dinámico de la barra de navegación al hacer scroll
         window.addEventListener('scroll', function() {
-            const navbar = document.querySelector('.navbar');
+            const barraNavegacion = document.querySelector('.barra-navegacion');
             if (window.scrollY > 50) {
-                navbar.style.backgroundColor = '#1a1a1a';
+                barraNavegacion.style.backgroundColor = 'rgba(26, 26, 26, 0.98)';
             } else {
-                navbar.style.backgroundColor = 'transparent';
+                barraNavegacion.style.backgroundColor = 'rgba(26, 26, 26, 0.95)';
             }
         });
 
-        // Add animation on scroll
-        const observerOptions = {
+        // Observer de intersección para animaciones
+        const opcionesObservador = {
             threshold: 0.1,
             rootMargin: '0px 0px -50px 0px'
         };
 
-        const observer = new IntersectionObserver(function(entries) {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.style.opacity = '1';
-                    entry.target.style.transform = 'translateY(0)';
+        const observador = new IntersectionObserver(function(entradas) {
+            entradas.forEach(entrada => {
+                if (entrada.isIntersecting) {
+                    entrada.target.classList.add('visible');
                 }
             });
-        }, observerOptions);
+        }, opcionesObservador);
 
-        // Observe all cards for animation
-        document.querySelectorAll('.menu-card, .member-card, .hero-card').forEach(card => {
-            card.style.opacity = '0';
-            card.style.transform = 'translateY(30px)';
-            card.style.transition = 'all 0.6s ease';
-            observer.observe(card);
+        // Observar todos los elementos con clase aparecer-suave
+        document.querySelectorAll('.aparecer-suave').forEach(elemento => {
+            observador.observe(elemento);
+        });
+
+        // Resaltado de enlace de navegación activo
+        window.addEventListener('scroll', () => {
+            const secciones = document.querySelectorAll('section');
+            const enlacesNavegacion = document.querySelectorAll('.nav-link');
+            
+            let seccionActual = '';
+            secciones.forEach(seccion => {
+                const inicioSeccion = seccion.offsetTop - 100;
+                const alturaSeccion = seccion.offsetHeight;
+                if (window.pageYOffset >= inicioSeccion && window.pageYOffset < inicioSeccion + alturaSeccion) {
+                    seccionActual = seccion.getAttribute('id');
+                }
+            });
+            
+            enlacesNavegacion.forEach(enlace => {
+                enlace.classList.remove('active');
+                if (enlace.getAttribute('href') === `#${seccionActual}`) {
+                    enlace.classList.add('active');
+                }
+            });
         });
     </script>
 </body>
